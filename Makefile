@@ -1,8 +1,8 @@
 container_name := java
 container_registry := nordstrom
-container_release := 7
+container_release := 8
 
-.PHONY: build tag release
+.PHONY: build tag
 
 build: Dockerfile $(build_container_prereqs)
 	docker build -t $(container_name) .
