@@ -1,6 +1,6 @@
 container_name := java
 container_registry := nordstrom
-container_release := 8
+container_release := 8-jdk
 
 .PHONY: build tag
 
