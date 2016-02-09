@@ -1,4 +1,4 @@
-FROM nordstrom/baseimage-ubuntu:14.04.3
+FROM nordstrom/baseimage-ubuntu:14.04
 MAINTAINER Innovation Platform Team "invcldtm@nordstrom.com"
 
 RUN echo "deb http://ppa.launchpad.net/openjdk-r/ppa/ubuntu trusty main" \
