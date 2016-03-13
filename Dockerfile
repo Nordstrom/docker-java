@@ -1,9 +1,5 @@
-FROM nordstrom/baseimage-ubuntu:14.04
+FROM nordstrom/baseimage-ubuntu:16.04
 MAINTAINER Innovation Platform Team "invcldtm@nordstrom.com"
-
-RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 86F44E2A \
- && echo "deb http://ppa.launchpad.net/openjdk-r/ppa/ubuntu trusty main" \
-      > /etc/apt/sources.list.d/java.list
 
 RUN apt-get update -qy \
  && apt-get install -qy \
