@@ -1,5 +1,7 @@
-FROM nordstrom/baseimage-ubuntu:14.04
+FROM quay.io/nordstrom/baseimage-ubuntu:16.04
 MAINTAINER Innovation Platform Team "invcldtm@nordstrom.com"
+
+USER root
 
 RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 86F44E2A \
  && echo "deb http://ppa.launchpad.net/openjdk-r/ppa/ubuntu trusty main" \
@@ -12,3 +14,5 @@ RUN apt-get update -qy \
 ENV JAVA_HOME /usr/lib/jvm/java-8-openjdk-amd64
 
 RUN update-ca-certificates --fresh
+
+USER ubuntu
