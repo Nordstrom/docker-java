@@ -1,5 +1,5 @@
 FROM quay.io/nordstrom/java:8
-MAINTAINER Innovation Platform Team "invcldtm@nordstrom.com"
+MAINTAINER Store Modernization Platform Team "stmdrnztnpfrm@nordstrom.com"
 
 USER root
 

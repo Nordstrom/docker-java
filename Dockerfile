@@ -1,5 +1,5 @@
 FROM quay.io/nordstrom/baseimage-ubuntu:16.04
-MAINTAINER Store Modernization Platform Team "invcldtm@nordstrom.com"
+MAINTAINER Store Modernization Platform Team "stmdrnztnpfrm@nordstrom.com"
 
 USER root
 
