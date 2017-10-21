@@ -22,8 +22,12 @@ tag/image: build/image
 	docker tag $(IMAGE_NAME) $(IMAGE_REGISTRY)/$(IMAGE_NAME):$(IMAGE_TAG)
 
 .PHONY: build/image
-build/image: Dockerfile
+build/image: Dockerfile pull/from_image
 	docker build -t $(IMAGE_NAME) $(IMAGE_BUILD_ARGS) .
+
+.PHONY: pull/from_image
+pull/from_image:
+	docker pull $(IMAGE_REGISTRY)/baseimage-ubuntu:16.04
 
 .PHONY: push/jdk_image
 push/jdk_image: tag/jdk_image
