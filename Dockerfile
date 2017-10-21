@@ -1,5 +1,5 @@
 FROM quay.io/nordstrom/baseimage-ubuntu:16.04
-MAINTAINER Store Modernization Platform Team "stmdrnztnpfrm@nordstrom.com"
+MAINTAINER Nordstrom Kubernetes Platform Team "techk8s@nordstrom.com"
 
 USER root
 
@@ -11,4 +11,4 @@ ENV JAVA_HOME /usr/lib/jvm/java-8-openjdk-amd64
 
 RUN update-ca-certificates --fresh
 
-USER ubuntu
+USER nordstrom
